@@ -1,0 +1,37 @@
+This is a file that
+will compare the speed of 
+ascii and binary file formats.
+
+Thus, we include number 55 34 
+and special characters !? that 
+are at least supported in ascii
+
+frea
+rf
+re
+greg
+
+reeg
+tretgtrsg
+bg
+bggf
+specialdgt
+regs
+tretgtrsg
+tretgtrsgg
+t
+greg
+tretgtrsggt
+rstgdf
+greg
+vtr3vq
+5ty
+b4w
+y6w
+vtr3vq5
+we45
+tw
+45
+54
+w
+tretgtrsgw4
