@@ -1,0 +1,3 @@
+gcc -c ex1a.c # creates an object "file ex1a.o"
+gcc -o ex1a.exe ex1a.o # creates an executable file "ex1a.exe"
+gcc -o ex1a.exe ex1a.c # shortest way to do it
