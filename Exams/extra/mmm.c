@@ -71,15 +71,15 @@ double **MMM_omp(int N) {
     => the summation over k must be done serially for each element C[i][j],
     and then Reduced in the end.
     */
-    #pragma omp parallel for private(j) private(k) //reduction(+:s)
+    #pragma omp parallel for private(j) private(k) reduction(+:s)
     for (i=0; i<N; i++) { 
         for (j=0; j<N; j++) {
-            //s = 0.0;
+            s = 0.0;
             for (k=0; k<N; k++) {
-                C[i][j] += A[i][k]*B[k][j]; // OpenMP does reduction automatically here ???
+                s += A[i][k]*B[k][j]; // OpenMP does reduction automatically here ???
                 // This is a reduction operation, but each thread only updates to its own C[i][j] value,
                 // because there are no dependencies across indices owned by different threads.
-            //C[i][j] = s;
+            C[i][j] = s;
         }
     }
     }

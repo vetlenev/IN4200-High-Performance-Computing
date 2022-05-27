@@ -20,6 +20,9 @@ ex3 : ex3.c
 ex3c : ex3c.c 
 	$(CC) $< -o $@ -fopenmp $(DEP)
 
+ex3_new : ex3_new.c 
+	$(CC) $< -o $@ -fopenmp
+
 clean :
 	rm -f *.o $(PROGRAMS)
 
